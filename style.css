@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Pixelify Sans', cursive;
+    background-image: url(/imgs/wallpaper1.png);
+    background-position: top;
+    background-size: cover;
+    color: white;
+}
+.nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.nav-title{
+    margin: 10px 0px;
+}
+.nav-links,a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+/*Contenedor principal*/
+.flex-container-main{
+    align-items: flex-start;
+    display: flex;
+}
+/*Lado izquierdo*/
+.col-1{
+    flex: 2;
+}
+/*Lado Derecho*/
+.col-2{
+    flex: 2;
+}
+/*Informacion*/
+.encabezado{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 610px;
+    height: 400px;
+}
+.head-title{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.octavio{
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px white;
+}
+
+.header1{
+    width: 600px;
+    height: 400px;
+}
+/*Mapa*/
+.maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Información*/
+h3{
+    display: flex;
+    justify-content: center;
+}
+/*Education*/
+.encabezado2{
+    border: 1px solid;
+    height: 200px;
+    width: 645px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    font-size: 30px;
+    margin-left: 15px;
+}
+.ed-1,.ed-2{
+    font-size: 20px;
+}
+.education,.education2{
+    margin-left: 15px;
+}
+.education2{
+    margin-top: 10px;
+}
