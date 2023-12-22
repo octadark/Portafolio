@@ -4,10 +4,8 @@
 }
 body{
     font-family: 'Pixelify Sans', cursive;
-    background-image: url(/imgs/wallpaper1.png);
-    background-position: top;
-    background-size: cover;
-    color: white;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
 }
 .nav{
     height: 100px;
@@ -26,34 +24,40 @@ body{
     align-items: center;
     gap: 50px;
     list-style: none;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 /*Contenedor principal*/
 .flex-container-main{
-    align-items: flex-start;
     display: flex;
+    flex-direction: column;
 }
 /*Lado izquierdo*/
 .col-1{
     flex: 2;
 }
-/*Lado Derecho*/
 .col-2{
-    flex: 2;
+    flex: 1;
+}
+.col-3{
+    flex: 3;
 }
 /*Informacion*/
 .encabezado{
     justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
     margin-left: 10px;
-    border: 1px solid;
-    border-radius: 20px;
     backdrop-filter: blur(10px);
-    width: 610px;
     height: 400px;
+    gap: 50px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
 }
 .head-title{
     margin: 10px 0px;
@@ -61,16 +65,20 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+}
+.acerca{
+    font-size: 17px;
 }
 .octavio{
-    height: 150px;
-    width: 150px;
-    border-radius: 20%;
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px white;
+    height: 230px;
+    width: 180px;
+    border-radius: 5%;
+    box-shadow: 20px 20px black;
 }
-
+h2{
+    margin-top: 20px;
+}
 .header1{
     width: 600px;
     height: 400px;
@@ -80,6 +88,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 /*Información*/
 h3{
@@ -88,13 +97,16 @@ h3{
 }
 /*Education*/
 .encabezado2{
-    border: 1px solid;
     height: 200px;
-    width: 645px;
-    border-radius: 20px;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    gap: 5px;
 }
 h4{
     font-size: 30px;
@@ -108,4 +120,169 @@ h4{
 }
 .education2{
     margin-top: 10px;
+}
+/*Proyectos*/
+.encabezado3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+h5{
+    font-size: 30px;
+    margin-top: 25px;
+}
+.pr-1{
+    font-size: 30px;
+}
+.logo-1{
+    width: 150px;
+    height: 150px;
+}
+.head-title2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 380px;
+
+}
+.description-1{
+    font-size: 17px;
+}
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    outline: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+.button:hover{
+    color: white;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.button:hover::before{
+    width: 150%;
+}
+/*Habilidades*/
+.encabezado4{
+    background-color: black;
+    color: white;
+}
+h6{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+.skill-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background-color: rgba(255, 255,255, 0.6);
+    height: 40px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+.skill-fill{
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill-percent{
+    font-size: 30px;
+}
+.html{
+    animation: html 2s;
+    width: 80%;
+}
+.css{
+    animation: css 2s;
+    width: 60%;
+}
+.js{
+    animation: js 2s;
+    width: 30%;
+}
+.python{
+    animation: python 2s;
+    width: 50%;
+}
+.mysql{
+    animation: mysql 2s;
+    width: 50%;
+}
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+@keyframes python {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+@keyframes mysql {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
 }
