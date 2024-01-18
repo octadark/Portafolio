@@ -4,11 +4,26 @@
 }
 body{
     font-family: 'Pixelify Sans', cursive;
-    background-color: whitesmoke;
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/*Dark/light button */
+.dark-mode{
+    background-color: #ffffff;
+    color: #000000;
+}
+@media (max-width: 600px) {
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 .nav{
-    height: 100px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -18,13 +33,17 @@ body{
 .nav-title{
     margin: 10px 0px;
 }
-.nav-links,a{
+.nav-links{
+    list-style: none;
+    margin: 0px 20px;
+}
+a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
     list-style: none;
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
 }
 /*Contenedor principal*/
@@ -76,19 +95,9 @@ body{
     border-radius: 5%;
     box-shadow: 20px 20px black;
 }
-h2{
-    margin-top: 20px;
-}
 .header1{
     width: 600px;
     height: 400px;
-}
-/*Mapa*/
-.maps{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 /*Información*/
 h3{
@@ -97,14 +106,13 @@ h3{
 }
 /*Education*/
 .encabezado2{
+    padding-bottom: 100px;
     height: 200px;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
     text-align: center;
     gap: 5px;
 }
@@ -121,6 +129,7 @@ h4{
 .education2{
     margin-top: 10px;
 }
+
 /*Proyectos*/
 .encabezado3{
     display: flex;
@@ -154,8 +163,8 @@ h5{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: black;
-    outline: 2px solid black;
+    color: white;
+    outline: 2px solid white;
     border-radius: 10px;
     padding: 20px 30px;
     margin: 20px 0px;
@@ -164,7 +173,7 @@ h5{
     transition: color 1s;
 }
 .button:hover{
-    color: white;
+    color: black;
 }
 .button::before{
     content: '';
@@ -173,7 +182,7 @@ h5{
     left: -50px;
     width: 0;
     height: 100%;
-    background-color: black;
+    background-color: white;
     transform: skewX(35deg);
     z-index: -1;
     transition: width 1s;
@@ -182,11 +191,7 @@ h5{
     width: 150%;
 }
 /*Habilidades*/
-.encabezado4{
-    background-color: black;
-    color: white;
-}
-h6{
+h2{
     text-align: center;
     font-size: 30px;
     margin-top: 25px;
@@ -201,19 +206,19 @@ h6{
     margin-bottom: 40px;
 }
 .skill-title{
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 .skill-bar{
     width: 100%;
-    background-color: rgba(255, 255,255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
     height: 40px;
     z-index: -1;
     border-radius: 100px;
     position: absolute;
 }
 .skill-fill{
-    background: rgb(255, 255, 255);
+    background-color: white;
     color: black;
     height: 40px;
     border-radius: 100px;
@@ -234,55 +239,138 @@ h6{
     animation: css 2s;
     width: 60%;
 }
-.js{
-    animation: js 2s;
+.javascript{
+    animation: javascript 2s;
     width: 30%;
 }
 .python{
     animation: python 2s;
-    width: 50%;
+    width: 40%;
 }
 .mysql{
     animation: mysql 2s;
     width: 50%;
 }
-@keyframes html {
-    from {
+@keyframes html{
+    from{
         width: 0;
     }
-    to {
+    to{
         width: 80%;
     }
 }
-@keyframes css {
-    from {
+@keyframes css{
+    from{
         width: 0;
     }
-    to {
+    to{
         width: 60%;
     }
 }
-@keyframes js {
-    from {
+@keyframes javascript{
+    from{
         width: 0;
     }
-    to {
+    to{
         width: 30%;
     }
 }
-@keyframes python {
-    from {
+@keyframes python{
+    from{
         width: 0;
     }
-    to {
+    to{
+        width: 40%;
+    }
+}
+@keyframes mysql{
+    from{
+        width: 0;
+    }
+    to{
         width: 50%;
     }
 }
-@keyframes mysql {
-    from {
-        width: 0;
-    }
-    to {
-        width: 50%;
-    }
+/*MI CV*/
+.header-5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0px;
+
+}
+.cv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.nav-links{
+    display: flex;
+    gap: 15px;
+}
+.contact{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.button2{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    outline: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+h7{
+    font-size: 25px;
+
+}
+.button2:hover{
+    color: black;
+}
+.button2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.button2:hover::before{
+    width: 150%;
+}
+/*Contacto*/
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+textarea{
+    height: 120px;
 }

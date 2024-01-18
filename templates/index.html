@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <!--Mi portafolio-->
+    <div class="nav">
+        <h1 class="nav-title">Octavio Vicente Chávez Rodriguez</h1>
+        <h3> Full stack developer</h3>
+        <button id="mode-toggle">Cambiar Modo</button>
+    </div>
+    <!--contenedor principal-->
+    <div class="flex-container-main">
+        <div class="col-1">
+            <div class="encabezado">
+                <div class="head-title">
+                    <picture>
+                        <img src="/static/imgs/foto.jpg" alt="octavius" class="octavio">
+                    </picture>
+                </div>
+                <div class="information">
+                    <p class="acerca">Me caracterizo por ser una persona responsable, comprometida y organizada,<br>
+                    cualidades que me convierten en un excelente compañero de trabajo. Además, tengo<br>
+                    una destacada iniciativa para aprender y mejorar constantemente en mi labor,<br>
+                    contribuyendo así al crecimiento y éxito del equipo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="encabezado2">
+                <h2>Educación</h2>
+                <div class="education2">
+                    <p class="ed-2"> Coding Dojo Bootcamp</p>
+                    <p class="licence2">Region del Bio-bio (01/09/2023)</p>
+                </div>
+                <a href="/document/certificadooctavio.pdf" download="Certificado" class="button2"> Mi certificado </a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="encabezado3" id="project">
+                <h2>Mis proyectos</h2>
+                <div class="head-title2">
+                    <picture>
+                        <img src="/static/imgs/viiigameslogo.jpg" alt="logo" class="logo-1">
+                    </picture>
+                    <div class="proyectos">
+                        <p class="pr-1"> VIIIGames</p>
+                    </div>
+                </div>
+                <p class="description-1">VIIIGames es una pagina de foros que esta dirigido a usuarios aficionados <br>
+                a juegos de mesa con el objetivo de facilitar la interacción entre jugadores para organizar partidas, <br>
+                resolver dudas, y compartir opiniones, brindando un espacio para explorar hobbies y permitiendo que las <br>
+                tiendas amplíen el alcance de sus eventos.</p>
+            </div>
+        </div>
+        <!--Habilidades-->
+        <h2>Mis Lenguajes</h2>
+                <div class="skills-area">
+                    <div class="skill">
+                        <div class="skill-title">HTML</div>
+                        <div class="skill-bar"></div>
+                        <div class="html skill-fill">
+                        <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">CSS</div>
+                        <div class="skill-bar"></div>
+                        <div class="css skill-fill">
+                        <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">JavaScript</div>
+                        <div class="skill-bar"></div>
+                        <div class="javascript skill-fill">
+                        <span class="skill-percent">30%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Python</div>
+                        <div class="skill-bar"></div>
+                        <div class="python skill-fill">
+                        <span class="skill-percent">40%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">MySQL</div>
+                        <div class="skill-bar"></div>
+                        <div class="mysql skill-fill">
+                        <span class="skill-percent">50%</span>
+                        </div>
+                    </div>
+                </div>
+                
+        <!--fin de la lista-->
+        <div class="header-5">
+            <div class="cv">
+            <h2>Para más información</h2>
+            <a href="/document/CVoctavio.pdf" download="CVdeOctavio" class="button2"> Descarga mi CV </a>
+            <div class="nav-links">
+            <a href="https://github.com/octadark" class="fa fa-github" style="font-size:36px"></a>
+            <a href="https://www.instagram.com/octadark/" class="fa fa-instagram" style="font-size:36px"></a>
+            <a href= "https://www.linkedin.com/in/octavio-vicente-ch%C3%A1vez-rodr%C3%ADguez-84a366290/" class="fa fa-linkedin-square" style="font-size:36px"></a>
+            </div>
+            
+        </div> 
+            <div class="contact" id="contact">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/octaviochavez154@gmail.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
