@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <title>Mi portafolio</title>
 </head>
 <body>
-    <!--Mi portafolio-->
+    <!--Nav-->
     <div class="nav">
         <h1 class="nav-title">Octavio Vicente Chávez Rodriguez</h1>
         <h3> Full stack developer</h3>
-        <button id="mode-toggle">Cambiar Modo</button>
+        <i class="bi bi-brightness-high-fill" id="toggledark"></i>
     </div>
     <!--contenedor principal-->
     <div class="flex-container-main">
+        <!--Acerca de mi-->
         <div class="col-1">
             <div class="encabezado">
                 <div class="head-title">
@@ -37,6 +39,7 @@
                 </div>
             </div>
         </div>
+        <!--Mi educación-->
         <div class="col-2">
             <div class="encabezado2">
                 <h2>Educación</h2>
@@ -47,6 +50,7 @@
                 <a href="/document/certificadooctavio.pdf" download="Certificado" class="button2"> Mi certificado </a>
             </div>
         </div>
+        <!--Mis Proyectos-->
         <div class="col-3">
             <div class="encabezado3" id="project">
                 <h2>Mis proyectos</h2>
@@ -64,7 +68,7 @@
                 tiendas amplíen el alcance de sus eventos.</p>
             </div>
         </div>
-        <!--Habilidades-->
+        <!--Mis Habilidades-->
         <h2>Mis Lenguajes</h2>
                 <div class="skills-area">
                     <div class="skill">
@@ -103,8 +107,6 @@
                         </div>
                     </div>
                 </div>
-                
-        <!--fin de la lista-->
         <div class="header-5">
             <div class="cv">
             <h2>Para más información</h2>
@@ -114,8 +116,8 @@
             <a href="https://www.instagram.com/octadark/" class="fa fa-instagram" style="font-size:36px"></a>
             <a href= "https://www.linkedin.com/in/octavio-vicente-ch%C3%A1vez-rodr%C3%ADguez-84a366290/" class="fa fa-linkedin-square" style="font-size:36px"></a>
             </div>
-            
         </div> 
+        <!--Formulario de contacto-->
             <div class="contact" id="contact">
             <h2>Contacto</h2>
             <form action="https://formsubmit.co/octaviochavez154@gmail.com" method="POST">
@@ -130,6 +132,5 @@
         </div>
   </div>
 </div>
-<script src="script.js"></script>
 </body>
 </html>
