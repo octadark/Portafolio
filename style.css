@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Pixelify Sans', cursive;
@@ -91,7 +92,8 @@ a{
     font-size: 17px;
 }
 .octavio{
-    height: 230px;
+    margin-bottom: 100px;
+    height: 230px auto;
     width: 180px;
     border-radius: 5%;
     box-shadow: 20px 20px black;
@@ -135,7 +137,6 @@ h4{
 .encabezado3{
     display: flex;
     align-items: center;
-    flex-direction: column;
     padding-bottom: 80px;
 }
 h5{
@@ -150,11 +151,12 @@ h5{
     height: 150px;
 }
 .head-title2{
+    margin: 20px 0px;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    text-align: start;
     justify-content: space-between;
-    gap: 380px;
+    gap: 20px;
 
 }
 .description-1{
@@ -298,12 +300,12 @@ h2{
     align-items: center;
     justify-content: space-around;
     padding: 100px 0px;
+    gap: 25px;
 
 }
 .cv{
     display: flex;
     align-items: center;
-    gap: 10px;
     flex-direction: column;
 }
 .nav-links{
@@ -315,7 +317,6 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
     width: 500px;
 }
 
